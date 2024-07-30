@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookEase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>CookEase</h1>
+        <div class="list">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <div id="searchContainer" class="bgimg">
+        <input type="text" id="search" placeholder="Enter ingredients...">
+        <button id="searchButton">Search</button>
+    </div>
+    <div id="content">
+        <div class="left">
+            <div id="sidebar" class="bgimg">
+                <div class="categoryContainer">
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a id="breakfast" href="#">Breakfast</a></li>
+                        <li><a id="lunch" href="#">Lunch</a></li>
+                        <li><a id="dinner" href="#">Dinner</a></li>
+                        <li><a id="snacks" href="#">Snacks</a></li>
+                        <li><a id="desserts" href="#">Desserts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="recipes" class="bgimg">
+                <div class="placeholder">Search for recipes to display them here.</div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="about">
+        <h2>CookEase</h2>
+        <p>Welcome to CookEase, your ultimate recipe finder website that transforms the way you cook. Designed with
+            convenience in mind, CookEase helps you discover delicious recipes based on the ingredients you have at home.
+            Whether you’re a seasoned chef or just starting your culinary journey, our platform is here to inspire and
+            simplify your cooking experience.
+            <br>
+            Simply enter the ingredients you have on hand, and CookEase will provide you with a variety of recipe options
+            that make the most of what’s already in your pantry. From quick snacks and hearty meals to delightful
+            desserts, CookEase offers personalized recipe suggestions tailored to your preferences and needs. Say goodbye
+            to the hassle of meal planning and grocery shopping – with CookEase, you can create mouthwatering dishes with
+            ease and creativity. Join our community of food enthusiasts and embark on a culinary adventure
+            with Cookies today!
+        </p>
+        </div><div class="section" id="contact">
+        <h2 id="Contact">Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us at <a
+                href="mailto:support@cookease.com">support@cookease.com</a></p>
+        <p id="b-msg"><br>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+            Content Policies. <br> Sigma Infotech Pvt. Ltd</p>  
+    </div>
+    <!-- Modal Structure -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="" style="width:100%; max-width:300px;">
+            <p id="modalSummary"></p>
+            <ul id="modalIngredients"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
